@@ -17,7 +17,7 @@ Both operations were implemented first with SQLite, then reimplemented with Redi
 | postTweet | 2,393 | 5,386 |
 | getHomeTimeline | 2,537 | 5,645 |
 
-Redis outperformed SQLite in both operations — tweet posting improved ~2.3x and timeline retrieval improved ~2.2x. The primary gains came from Redis operating in-memory rather than on disk, and eliminating the JOIN and sort operations required by the relational model.
+Redis outperformed SQLite in both operations. with tweet posting improving 2.3x and timeline retrieval improving 2.2x compared to SQLite. The primary gains came from Redis operating in-memory rather than on disk, and eliminating the JOIN and sort operations required by the relational model.
 
 For full analysis, see the reports below.
 
