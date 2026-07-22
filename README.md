@@ -6,7 +6,7 @@ Modeled Twitter's tweet posting and home timeline retrieval to compare the perfo
 
 This project implements a simplified Twitter API supporting two core operations:
 - **postTweet**: Post a tweet by a user
-- **getHomeTimeline**: Retrieve the 10 most recent tweets from users a given user follows
+- **getHomeTimeline**: Retrieve the 10 most recent tweets from the accounts a user follows
 
 Both operations were implemented first with SQLite, then reimplemented with Redis to benchmark how database architecture affects read/write performance at scale.
 
